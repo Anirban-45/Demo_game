@@ -1,0 +1,215 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://scenes/Kien.tscn" type="PackedScene" id=1]
+[ext_resource path="res://textures/vonger_jinish.png" type="Texture" id=3]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 292.09, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 78.3603, 6.58551 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 39.4067
+
+[sub_resource type="CapsuleShape2D" id=5]
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 20.4549
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 26.3643
+
+[sub_resource type="CircleShape2D" id=8]
+radius = 40.451
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 33.8676, 10 )
+
+[sub_resource type="CapsuleShape2D" id=10]
+radius = 8.97281
+height = 33.6887
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 10, 37.0248 )
+
+[sub_resource type="CircleShape2D" id=12]
+radius = 11.8792
+
+[sub_resource type="CircleShape2D" id=13]
+radius = 58.9119
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 28.6919, 10 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 200.491, 10 )
+
+[node name="Chapter_One" type="Node2D"]
+
+[node name="Map" type="Sprite" parent="."]
+position = Vector2( 512.601, 299.242 )
+scale = Vector2( 1.39163, 1.16747 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Map"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 74.5258, 226.496 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 340.08, 212.964 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 172.993, 172.138 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 29.9118, 210.675 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -30.5855, 210.293 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 256.217, 208.386 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 215.565, 204.189 )
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 130.421, 206.859 )
+shape = SubResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -135.895, 190.453 )
+shape = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -77.6389, 208.004 )
+shape = SubResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -201.314, 80.5775 )
+rotation = 0.20944
+shape = SubResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -213.038, 89.342 )
+shape = SubResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -157.982, 154.969 )
+shape = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -212.077, 182.822 )
+shape = SubResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 4.04865, 206.191 )
+rotation = -0.261799
+shape = SubResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -180.691, 10.6986 )
+rotation = -1.0472
+shape = SubResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( -198.899, 47.0969 )
+rotation = -1.36136
+shape = SubResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 97.3801, 222.362 )
+rotation = -0.600393
+shape = SubResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Map/StaticBody2D"]
+material = SubResource( 1 )
+position = Vector2( 377.819, 32.5024 )
+rotation = 1.5708
+shape = SubResource( 15 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Kien" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456.387, 326.722 )
